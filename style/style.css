@@ -3,3 +3,69 @@
 body{
     font-family: "Inter", sans-serif;
 }
+
+/* Default Styles */
+*{
+    margin: 0;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+/* Shared Styles */
+
+/* Navbar */
+.navbar{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    color: rgb(230, 83, 60);
+    font-size: 2.3rem;
+    font-weight: 800;    
+}
+
+.nav-links-button{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 0.5rem 1.2rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 3rem;  
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 400;    
+}
+
+.nav-item{
+    list-style: none;    
+}
+
+.nav-menu{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+
+/* Navbar */
+.nav-links{
+    display: none;
+}
+
+.nav-menu{
+    display: block;
+}
+
+}
+
