@@ -14,7 +14,26 @@ body{
 }
 
 /* Shared Styles */
+.text-one{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;    
+}
 
+.text-two{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400; 
+}
+
+.button-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);   
+    padding: 1rem 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.15rem;
+    font-weight: 600;    
+}
 /* Navbar */
 .navbar{
     width: 80%;
@@ -56,6 +75,69 @@ body{
     display: none;
 }
 
+/* Change Your Habits */
+.habits{
+    width: 80%;
+    margin: 6.25rem auto;
+    text-align: center;
+}
+
+.habits-details{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.habit img{
+    border-radius: 50%;
+}
+
+.habit h5{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;  
+    margin-top: 1.5rem;  
+}
+
+.habit p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400; 
+    max-width: 231px;
+    margin: 0.5rem auto;
+}
+
+/* Run an Extra Mile Easily */
+.run{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1.15rem;
+    background: rgb(34, 34, 34);
+    display: flex; 
+    padding: 2rem; 
+    justify-content: space-between;  
+}
+
+.run-container{
+    max-width: 443px; 
+    padding-left: 2rem;
+}
+
+.run-container h3{
+    margin-bottom: 1rem;
+}
+
+.run-container button{
+    margin-top: 1rem;
+}
+
+.run-image img{
+    width: 366px;
+    height: 312px; 
+    border-radius: 18px;    
+}
+
+
 @media screen and (max-width:576px){
 
 /* Navbar */
@@ -65,7 +147,27 @@ body{
 
 .nav-menu{
     display: block;
+    color: aliceblue;
 }
 
+/* Change Your Habits */
+.habits-details{
+    flex-direction: column;
 }
 
+.habit p{
+    margin-bottom: 1rem;
+}
+
+/* Run an Extra Mile Easily */
+.run{
+    flex-direction: column;
+}
+
+.run-image{
+    margin: 2rem auto;
+}
+
+
+
+}
