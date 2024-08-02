@@ -77,7 +77,7 @@ body{
 
 /* Change Your Habits */
 .habits{
-    width: 80%;
+    width: 70%;
     margin: 6.25rem auto;
     text-align: center;
 }
@@ -109,7 +109,7 @@ body{
 
 /* Run an Extra Mile Easily */
 .run{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 1.15rem;
     background: rgb(34, 34, 34);
@@ -168,6 +168,9 @@ body{
     margin: 2rem auto;
 }
 
-
+.run-image img{
+    width: 287px;
+    height: 170px;
+}
 
 }
