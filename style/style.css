@@ -33,6 +33,7 @@ body{
     color: rgb(255, 255, 255);
     font-size: 1.15rem;
     font-weight: 600;    
+    cursor: pointer;
 }
 /* Navbar */
 .navbar{
@@ -74,6 +75,42 @@ body{
 .nav-menu{
     display: none;
 }
+
+/* Get body in shape & stay healthy */
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.banner-container{
+    width: 35%;
+}
+
+.banner-container h1{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.banner-container p{
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.button-unique{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;  
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2.6rem;  
+    padding: 1rem 2.5rem;
+    background: black;
+    cursor: pointer;
+}
+
 
 /* Change Your Habits */
 .habits{
@@ -135,6 +172,63 @@ body{
     width: 366px;
     height: 312px; 
     border-radius: 18px;    
+}
+
+/* Meet Our Team */
+.team{
+    max-width: 70%;
+    margin: 100px auto;
+}
+
+.team-heading{
+    text-align: center;
+}
+
+.trainer-section-part{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);  
+    width: 80%;
+    padding: 20px;
+    margin: 2rem auto;
+}
+
+
+.trainer-section-one{
+    display: flex;
+    gap: 20px;
+}
+
+.trainer-section-two{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.trainer{
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 326.67px;
+    height: 272px;
+    text-align: left;
+}
+
+.trainer-info{
+    margin-top: -70px;
+    margin-left: 10px;
+}
+
+.trainer-name{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.trainer-position{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    margin: 0;
 }
 
 /* Footer */
@@ -212,6 +306,16 @@ footer{
     color: aliceblue;
 }
 
+/* Get body in shape & stay healthy */
+.banner{
+    flex-direction: column;
+}
+
+.banner-container{
+    width: 100%;
+}
+
+
 /* Change Your Habits */
 .habits-details{
     flex-direction: column;
@@ -233,6 +337,21 @@ footer{
 .run-image img{
     width: 287px;
     height: 170px;
+}
+
+/* Meet Our Team */
+.trainer-section-one{
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer-section-two{
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer-section-part{
+    background: none;
 }
 
 /* Footer */
