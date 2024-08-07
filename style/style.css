@@ -13,6 +13,7 @@ body{
     background-color: cornflowerblue;
 }
 
+
 /* Shared Styles */
 .text-one{
     color: rgb(255, 255, 255);
@@ -35,6 +36,11 @@ body{
     font-weight: 600;    
     cursor: pointer;
 }
+
+.hide{
+    display: none;
+}
+
 /* Navbar */
 .navbar{
     width: 80%;
@@ -59,6 +65,9 @@ body{
 .nav-links{
     display: flex;
     gap: 3rem;  
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 15px;
 }
 
 .nav-link{
@@ -174,69 +183,64 @@ body{
     border-radius: 18px;    
 }
 
+
 /* Meet Our Team */
 .team{
-    max-width: 70%;
+    width: 70%;
     margin: 100px auto;
-}
-
-.team-heading{
     text-align: center;
 }
 
-.trainer-section-part{
+.all-trainer{
+    position: relative;
+}
+
+.all-trainer img{
+    width: 326.67px;
+    height: 272px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);  
-    width: 80%;
-    padding: 20px;
-    margin: 2rem auto;
-}
-
-
-.trainer-section-one{
-    display: flex;
-    gap: 20px;
-}
-
-.trainer-section-two{
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 .trainer{
     border-radius: 18px;
-    background: rgba(0, 0, 0, 0.2);
-    width: 326.67px;
-    height: 272px;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .trainer-info{
-    margin-top: -70px;
-    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
 
 .trainer-name{
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 1rem;
     font-weight: 900;
-    margin: 0;
 }
 
-.trainer-position{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.875rem;
-    margin: 0;
+.row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+.row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+
 
 /* Footer */
 footer{
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
     padding: 4.5rem 0;
-    margin-top: 100px;
 }
 
 .footer{
@@ -294,6 +298,7 @@ footer{
     margin-top: 1.3rem;   
 }
 
+
 @media screen and (max-width:576px){
 
 /* Navbar */
@@ -304,6 +309,7 @@ footer{
 .nav-menu{
     display: block;
     color: aliceblue;
+    cursor: pointer;
 }
 
 /* Get body in shape & stay healthy */
@@ -340,24 +346,30 @@ footer{
 }
 
 /* Meet Our Team */
-.trainer-section-one{
+.trainer{
+    background:none;
+}
+
+.row-1{
+    display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
-.trainer-section-two{
+.row-2{
+    display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
-
-.trainer-section-part{
-    background: none;
-}
+ 
 
 /* Footer */
 .footer{
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
 }
+
 
 }
