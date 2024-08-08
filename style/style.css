@@ -4,6 +4,13 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+@import url('https://fonts.cdnfonts.com/css/miami');
+.banner-info span{
+    font-family: 'Miami', sans-serif;  
+    font-style: italic;  
+    font-weight: 100;                                  
+}
+
 /* Default Styles */
 *{
     margin: 0;
@@ -35,6 +42,8 @@ body{
     font-size: 1.15rem;
     font-weight: 600;    
     cursor: pointer;
+    max-width: 224px;
+    height: 54px;
 }
 
 .hide{
@@ -86,40 +95,94 @@ body{
 }
 
 /* Get body in shape & stay healthy */
+.button-unique{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 1rem 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;    
+    max-width: 224px;
+    height: 54px;
+    background-color: black;
+}
+
 .banner{
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 3rem;
+    align-items: center;
 }
 
-.banner-container{
-    width: 35%;
+.banner-info{
+    width: 40%;
 }
 
-.banner-container h1{
+.banner-info h3{
     color: rgb(255, 255, 255);
-    font-size: 5rem;
+    font-size: 78px;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+
+.banner-info p{
+    margin-bottom: 28px;
+}
+
+.banner-image{
+    position: relative;
+}
+
+.video-tutorial{
+    position: absolute;
+    max-width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    bottom: 12%;
+    right: 70%;
+}
+
+.orange{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.video-tutorial h3{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
-.banner-container p{
-    margin-top: 1.8rem;
-    margin-bottom: 1.8rem;
+
+.workout-tutorial{
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    max-width: 193px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding-top: 1rem;
 }
 
-.button-unique{
-    color: rgb(255, 255, 255);
-    font-size: 1.25rem;
-    font-weight: 600;  
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 2.6rem;  
-    padding: 1rem 2.5rem;
-    background: black;
-    cursor: pointer;
+.workout-tutorial h3{
+    color: rgb(250, 250, 249);
+    font-size: 2.5rem;
+    font-weight: 900;    
 }
-
 
 /* Change Your Habits */
 .habits{
@@ -408,10 +471,14 @@ footer{
     flex-direction: column;
 }
 
-.banner-container{
+.banner-info{
     width: 100%;
 }
 
+
+.banner-info button{
+    font-size: 12px;
+}
 
 /* Change Your Habits */
 .habits-details{
@@ -437,6 +504,11 @@ footer{
 }
 
 /* BMI Calculator */
+.bmi-title{
+    margin: 5rem 0;
+    width: 80%;
+}
+
 .bmi-container{
     flex-direction: column;
     padding: 3rem 0;
