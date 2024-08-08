@@ -469,6 +469,7 @@ footer{
 /* Get body in shape & stay healthy */
 .banner{
     flex-direction: column;
+    gap: 3rem;
 }
 
 .banner-info{
