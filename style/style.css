@@ -389,6 +389,26 @@ input, select{
     margin-top: 20px;
 }
 
+/* Why Gym Importance */
+.importance{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+
+.importance-info h3{
+    margin-bottom: 1rem;
+}
+
+.importance-image iframe {
+    border-radius: 1rem;
+}
 
 
 /* Footer */
@@ -482,6 +502,28 @@ footer{
     font-size: 12px;
 }
 
+.workout-tutorial{
+    left: 40%;
+    top: 35%;
+    width: 170px;
+    height: 50px;
+    padding-top: 0;
+}
+
+.workout-tutorial h3{
+    font-size: 1.5rem;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.video-tutorial{
+    left: 2%;
+    width: 160px;
+    height: 50px;
+}
+
 /* Change Your Habits */
 .habits-details{
     flex-direction: column;
@@ -489,14 +531,6 @@ footer{
 
 .habit p{
     margin-bottom: 1rem;
-}
-
-.workout-tutorial{
-    max-width: 180px;
-}
-
-.video-tutorial{
-    max-width: 145px;
 }
 
 /* Run an Extra Mile Easily */
@@ -559,6 +593,19 @@ input, select{
     align-items: center;
 }
  
+/* Why Gym Importance */
+.importance{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.importance-info p{
+    display: none;
+}
+
+.importance-image iframe{
+    width: 100%;
+}
 
 /* Footer */
 .footer{
